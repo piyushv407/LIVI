@@ -1,0 +1,20 @@
+h1{
+    background-color: rgb(187, 155, 155);
+}
+
+.main{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(165, 78, 78, 0.158);
+     background-image: url('./IMG/home/imgi_48_course-image-04-1536x864.jpg');
+     background-size:contain;
+     background-repeat: no-repeat;
+     /* background-position: center; */
+}
+.left{
+   
+    background-position: left;
+}
+.right{
+    background-position: right;
+}

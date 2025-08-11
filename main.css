@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.topbar {
+    height: 50px;
+    background-color: #EE2C3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 8px;
+    gap: 20px;
+    font-size: 16px;
+    font-family: "Mozilla Text", sans-serif;
+
+    img {
+        filter: invert(1);
+    }
+}
+
+.topbar_left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav_brand {
+    height: 100px;
+    width: 100%;
+    background-color: #FCF1F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 18px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 18px;
+}
+
+.nav_user {
+    display: flex;
+    gap: 18px;
+}
+
+/* hero */
+.underline {
+    margin: 130px 10px 20px 2px;
+
+
+    border: 1px solid black;
+    width: 60px;
+}
+
+.maincontainer {
+    position: relative;
+    height: 585.11;
+    width: 100%;
+    background-color: #FDF7F9;
+    display: flex;
+    padding: 0px 20px;
+    /* justify-content: space-between; */
+}
+
+.heromedia {
+    width: 34%;
+}
+
+.herologo {
+    line-height: 40px;
+}
+
+.TICK {
+    color: red;
+}
+
+
+.heroside {
+    display: flex;
+
+    span {
+        height: 54.41px;
+        margin: 20px 10px;
+        font-weight: 500px;
+    }
+}
+
+.learn {
+    height: 48.39px;
+    width: 154.5px;
+    margin-top: 20px;
+    margin-left: 2px;
+    padding: 14PX 36px;
+    background-color: #DF2332;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+}
+
+.heroimage {
+    height: 645px;
+
+    width: 30%;
+    position: relative;
+
+    .mainImage {
+        position: absolute;
+        top: 30px;
+        left: -100px;
+        width: 550px;
+    }
+}
+
+.heroi1 {
+    position: absolute;
+    display: inline-block;
+    top: 85px;
+    /* right: 80px; */
+    left: 100px;
+    z-index: 0;
+}
+
+.heroi2 {
+    position: absolute;
+    top: 182px;
+    left: 20px;
+
+    img {
+        filter: invert(23%) sepia(94%) saturate(5935%) hue-rotate(341deg) brightness(97%) contrast(94%);
+    }
+}
+
+.Hero_poster {
+    margin-left: 50px;
+    margin-top: 50px;
+    float: right;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, sans-serif;
+
+    .poster1 {
+        height: 520px;
+        border: 1px solid #D7D7D7;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+
+
+        .posterImage {
+            width: 100%;
+        }
+    }
+}
+
+.star {
+    float: right;
+}
+
+/* SECTION 2 */
+
+.Explore {
+    text-align: center;
+
+    h1 {
+        line-height: 80px;
+    }
+}
+
+.Course_card {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 150px);
+    align-items: center;
+    text-align: left;
+    grid-gap: 30px;
+    box-sizing: border-box;
+    background-color: #FDF7F9;
+
+}
+
+.Card {
+   display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+   border: 1px solid #D7D7D7;
+  padding: 28px 28px 16px 16px;
+  p{margin: 0;}
+  h3{
+    margin: 0 0 16px 0;
+  }
+
+
+    img {
+          background: #e92b2b;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  margin-right: 18px;
+    }
+
+}
+
+
+
+/*  */
+
+.poster1 {
+  position: relative;
+  /* width: 250px; */
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  /* text-align: center;     */
+  transition: all 0.3s ease;
+}
+
+/* .product-card img {
+  width: 100%;
+  display: block;
+} */
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* margin: 10px; */
+  transition: all 0.3s ease;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: -60px; /* Hidden below card */
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  /* margin: 10px; */
+  background-color: #EE2C3C;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.poster1:hover .product-details {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.poster1:hover .add-to-cart {
+  bottom: 0;
+}
